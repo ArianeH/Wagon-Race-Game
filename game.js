@@ -1,28 +1,22 @@
 $(document).ready(function() {
 
   $(".btn-danger").on("click", function(event){
-
     var player1 = $("#player1_race td.active");
     $("#player1_race td.active").removeClass("active");
     player1.next().addClass("active");
   });
 
   $(".btn-warning").on("click", function(event){
-
     $("#player2_race td.active").removeClass("active");
     $("#player2_race td.active").next().addClass("active");
   });
 
 });
 
-
-
-
 $(document).ready(function() {
   $(document).on('keyup', function(event) {
     // key a
     if (event.keyCode == 65) {
-
       var player1 = $("#player1_race td.active");
       $("#player1_race td.active").removeClass("active");
       player1.next().addClass("active");
@@ -40,7 +34,6 @@ $(document).ready(function() {
     };
 
     if (event.keyCode == 67) {
-
       var player2 = $("#player2_race td.active");
       $("#player2_race td.active").removeClass("active");
       player2.next().addClass("active");
